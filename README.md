@@ -22,7 +22,18 @@ This app provides basic wallet transactions and stock price lookups.
 
 ## Setup
 
-### 1. Clone Repository
-```bash
+### Clone Repository
+```sh
 git clone https://github.com/AnggaInJaya/my-wallet.git
 cd my-wallet
+```
+
+### Generate JWT Keys
+```sh
+ssh-keygen -t rsa -P "" -b 4096 -m PEM -f keys/jwtRS256.key
+```
+
+### Setup DB
+```sh
+rake db:create db:migrate
+```
