@@ -15,7 +15,6 @@ Rails.application.routes.draw do
       resources :stocks, only: [] do
         collection do
           get 'price_all'
-          get 'prices'
           get 'price'
         end
       end

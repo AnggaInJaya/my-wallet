@@ -1,25 +1,28 @@
-# README
+# My Wallet
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+A simple wallet management API built with **Ruby on Rails 8.0.2.1** and **Ruby 3.4.2**.  
 
-Things you may want to cover:
+This app provides basic wallet transactions and stock price lookups.
 
-* Ruby version
+---
 
-* System dependencies
+## Features
 
-* Configuration
+### Wallet Transactions
+- **Deposit**: Add balance to a wallet.  
+- **Withdraw**: Deduct balance from a wallet.  
+- **Transfer**: Send balance from one wallet to another.  
 
-* Database creation
+### Stock Prices (via API integration)
+- `price_all`: Get all stock prices.  
+- `price`: Get a specific stock price.  
+- `prices`: Get multiple stock prices.  
 
-* Database initialization
+---
 
-* How to run the test suite
+## Setup
 
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-# my-wallet
+### 1. Clone Repository
+```bash
+git clone https://github.com/AnggaInJaya/my-wallet.git
+cd my-wallet

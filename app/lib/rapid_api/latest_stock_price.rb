@@ -8,8 +8,15 @@ module RapidApi
     } }.freeze
 
     class << self
-      def price_all
-        HTTParty.get("#{BASE_URL}/any", HEADERS)
+      def equities(symbols)
+        return if symbols.nil?
+
+        query = { query: { Symbols: symbols } }
+        HTTParty.get("#{BASE_URL}/equities-enhanced", HEADERS.merge(query))
+      end
+
+      def equities_all
+        HTTParty.get("#{BASE_URL}/equities", HEADERS)
       end
     end
   end
