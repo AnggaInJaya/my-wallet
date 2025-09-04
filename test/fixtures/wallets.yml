@@ -1,0 +1,11 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  entityable_id: 1
+  entityable_type: MyString
+  balance: 1
+
+two:
+  entityable_id: 1
+  entityable_type: MyString
+  balance: 1
